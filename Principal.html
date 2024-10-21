@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Complex Div Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <div class="space" style="padding: 15px;">
+        <!-- menu lateral -->
+        <div class="container d-flex justify-content-center LeftMenuNav" style="padding: 0; border-radius: 15px; padding: 0; margin: 0">
+            <div class="menu-container mt-5" style="padding: 0; margin: 0; width: 85%;">
+                <h5 style="margin-bottom: 55px; font-weight: 700; padding-left: 10px;">Bienvenido [USUARIO]!</h5>
+                
+                <ul class="nav flex-column" style="padding: 0;  margin: 0; gap: 5px">
+
+                    <li class="btn disabled btn-light selected" style="color: #4a4a4a !important">
+                        <a class="linkT" href="#" tabindex="-1" style="display: flex; justify-content: space-between; color: #4a4a4a !important;">
+                            <span class="saldo-label" style="color: #4a4a4a !important">Saldo disponible</span>
+                            <span class="saldo-amount" style="color: #4a4a4a !important">$215.00</span>
+                        </a>
+                    </li>
+                    
+                    <li class="btn btn-light" href="Consulta.html">
+                        <a class="linkT" href="Consulta.html">
+                            <img src="static/Consulta.svg" alt="Consulta" class="me-2">
+                            <span>Consulta de saldo</span>
+                        </a>
+                    </li>
+                    <li class="separator"></li>
+                    <li class="btn btn-light"  href="Depositar.html">
+                        <a class="linkT" href="Depositar.html">
+                            <img src="static/Deposito.svg" alt="Depósitos" class="me-2">
+                            <span>Depósitos</span>
+                        </a>
+                    </li>
+                    <li class="btn btn-light" href="Retirar.html">
+                        <a class="linkT" href="Retirar.html">
+                            <img src="static/Retiro.svg" alt="Retiros" class="me-2">
+                            <span>Retiros</span>
+                        </a>
+                    </li>
+                    <li class="separator"></li>
+                    <li class="btn btn-light"  href="Pago.html">
+                        <a class="linkT" href="Pago.html">
+                            <img src="static/Pago.svg" alt="Pago de servicios" class="me-2">
+                            <span>Pago de servicios</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- contenido lado derecho -->
+        <div class="container d-flex justify-content-center RightContent" style="padding: 0; border-radius: 15px; padding: 0; margin: 0; flex:  50%;">
+            <div class="scrollable-div" style="padding: 0; margin: 0; width: 85%;">
+                <!--  carrusel  -->
+                <div class="card Item75to100" style="width: 100%; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.80);">
+                    <div class="card-body">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 200px;  ">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="static/R.jfif" class="d-block w-100" alt="Imagen" style="height: 200px; object-fit: cover; border-radius: 25px;">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Actualizate a golden</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="static/wp5834677.webp" class="d-block w-100" alt="Imagen" style="height: 200px; object-fit: cover; border-radius: 25px;">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Ahorra con charmander</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="static/NzH6Zgh.jpg" class="d-block w-100" alt="Imagen" style="height: 200px; object-fit: cover; border-radius: 25px;">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Pokésale</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- grafica de barras -->
+                <div class="card Item75to100" style="width: 100%; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.80);">
+                    <div class="card-body">
+                        <h5 class="card-title">Grafica de barras</h5>
+                        <div style="width: 100%; height: 200px; margin: auto;">
+                            <canvas id="expenseChart" style="width: 100%; height: 200px;"></canvas>
+                        </div>
+                        <script src="ScriptsForHome.js"></script>
+                    </div>
+                </div>
+                <!-- pestañas "hoy"  "Esta semana" "Este mes"  "Este año" con booststrap -->
+                <div class="container" style="padding: 0; margin: 0; width: 85%;">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="hoy-tab" data-bs-toggle="tab" data-bs-target="#hoy" type="button" role="tab" aria-controls="hoy" aria-selected="true">Hoy</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="semana-tab" data-bs-toggle="tab" data-bs-target="#semana" type="button" role="tab" aria-controls="semana" aria-selected="false">Esta semana</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="mes-tab" data-bs-toggle="tab" data-bs-target="#mes" type="button" role="tab" aria-controls="mes" aria-selected="false">Este mes</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="año-tab" data-bs-toggle="tab" data-bs-target="#año" type="button" role="tab" aria-controls="año" aria-selected="false">Este año</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="hoy" role="tabpanel" aria-labelledby="hoy-tab">
+                            <div class="card Item75to100" style="width: 100%; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.80);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Transacciones de hoy</h5>
+                                    <!-- tabla llamada historial de movimientos con las columnas "cantidad" "lugar"  "descripción"  "fecha y hora" con bootstrap-->
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Cantidad</th>
+                                                <th scope="col">Lugar</th>
+                                                <th scope="col">Descripción</th>
+                                                <th scope="col">Fecha y Hora</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>100</td>
+                                                <td>Almacen</td>
+                                                <td>Comida</td>
+                                                <td>12/12/2022 12:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>100</td>
+                                                <td>Almacen</td>
+                                                <td>Comida</td>
+                                                <td>12/12/2022 12:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>100</td>
+                                                <td>Almacen</td>
+                                                <td>Comida</td>
+                                                <td>12/12/2022 12:00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="semana" role="tabpanel" aria-labelledby="semana-tab">
+                            <div class="card Item75to100" style="width: 100%; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.80);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Transacciones de esta semana</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Transacciones de esta semana</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="mes" role="tabpanel" aria-labelledby="mes-tab">
+                            <div class="card Item75to100" style="width: 100%; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.80);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Transacciones de este mes</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Transacciones de este mes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="año" role="tabpanel" aria-labelledby="año-tab">
+                            <div class="card Item75to100" style="width: 100%; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.80);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Transacciones de este año</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Transacciones de este año</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

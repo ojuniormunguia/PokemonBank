@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Complex Div Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="BackgroundImage">
+    <div class="space">
+        <div class="left-div">
+            <!-- carta de inicio de sesión con pin de 4 dígitos -->
+            <div class="card Item75to100" style="width: 100%; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.80);">
+                <div class="card-body">
+                    <img src="https://i.ibb.co/pv4RSTr/Dise-o-sin-t-tulo.png" alt="Dise-o-sin-t-tulo" border="0" width="200px">
+                    <div class="input-group mb-3" style="width: 200px;">
+                        <span class="input-group-text" id="basic-addon1">#</span>
+                        <input type="password" class="form-control" placeholder="ej: 1234" aria-label="PIN" aria-describedby="basic-addon1" pattern="\d{4}" maxlength="4" title="El PIN debe ser un número de 4 dígitos">
+                    </div>  
+                    <p class="card-text subtleText" style="padding-bottom: 75px;">Ingrese su PIN de 4 dígitos para acceder a su cuenta.</p>
+                    <a href="Principal.html" class="btn btn-primary">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-div">
+            <!-- Carta de olvido de contraseña -->
+            <div class="card Item75to100 ms-auto">
+                <div class="card-body">
+                    <h5 class="card-title">¿No recuerdas tu PIN?</h5>
+                    <p class="card-text">Si no recuerda su pin de cuatro dígitos puede reestablecerlo aquí.</p>
+                    <a href="#" class="btn btn-link">Reestablecer pin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
